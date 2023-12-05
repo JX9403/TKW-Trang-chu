@@ -127,6 +127,8 @@ background-color: var(--color-pink);
   justify-content: center;
   align-items: center;
 }
+
+
 .content-tittle__sm{
   font-size: 5.6rem ;
   font-weight: 600;
@@ -142,6 +144,7 @@ background-color: var(--color-pink);
 .content-btn{
   display: flex;
   justify-content:space-between ;
+  
 }
 
 /* End Content */
