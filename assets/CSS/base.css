@@ -1,21 +1,23 @@
-:root {
-  --color-red: #d72121;
-  --color-blue: #0e55a7;
-  --color-pink: #fff0f0;
-  --color-black: #33363f;
-  --color-white: #ffffff;
+:root{
+  --color-red : #D72121;
+  --color-blue : #0E55A7;
+  --color-pink :#FFF0F0;
+  --color-black: #33363F;
+  --color-white:#FFFFFF;
+
 }
 
-* {
+
+*{
   box-sizing: inherit;
 }
 
-html {
+html{
   font-size: 62.5%;
   /* thuong 100% = 16px
   => 62.5 ~ 10px */
   line-height: 1.6rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
 }
 
@@ -27,13 +29,18 @@ a {
   text-decoration: none;
   color: black;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
+a:hover{
+  text-decoration: none;
+  color: var(--color-blue);
 }
 
-.btn {
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn{
   width: 160px;
   height: 50px;
   display: flex;
@@ -45,15 +52,22 @@ ul {
   font-weight: 500;
 }
 
-.btn__red {
+.btn__red{
   background-color: var(--color-red);
   color: var(--color-white);
 }
+.btn__red:hover{
+  color: var(--color-white);
+}
+.btn__white{
+  background-color: var(--color-white);
+  border: solid 1px var(--color-red);
+}
 
-.btn__red:hover {
+.btn__red:hover{
   background-color: #d72121bd;
   border: solid 1px var(--color-red);
-  color: var(--color-white);
+
 }
 
 .btn__blue{
@@ -62,12 +76,48 @@ ul {
 }
 
 .btn__blue:hover {
-  background-color: #0e55a7a5;
+  background-color: #0e55a7c4;
   border: solid 1px var(--color-blue);
   color: var(--color-white);
 }
 
-.btn__white {
+.btn-c{
+  width: 120px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: 15px;
+  border-radius: 45px;
+  font-weight: 500;
+}
+
+.btn-c__red{
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+.btn-c__red:hover{
+  color: var(--color-white);
+}
+.btn-c__white{
   background-color: var(--color-white);
+  border: solid 1px var(--color-black);
+}
+
+.btn-c__red:hover{
+  background-color: #d72121bd;
   border: solid 1px var(--color-red);
+
+}
+
+.btn-c__blue{
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.btn-c__blue:hover {
+  background-color: #0e55a7c4;
+  border: solid 1px var(--color-blue);
+  color: var(--color-white);
 }
