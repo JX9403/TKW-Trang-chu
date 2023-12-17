@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 576px) {
   .header-main {
     width: 498px;
   }
