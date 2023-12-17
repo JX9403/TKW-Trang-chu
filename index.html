@@ -18,19 +18,26 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
+<!--  Trang này là trang chủ trước khi đăng nhập => có đăng nhập và đăng kí -->
+
 <body>
   <!-- Header User-->
   <header class="header">
     <div class="header-main">
+      <!-- Logo -->
       <div class="header-logo">
         <img src="assets/img/Logo_PTIT_University.png" alt="Logo_PTIT_University">
       </div>
+
+      <!-- Thanh tìm kiếm -->
       <div class="header-search">
         <input class="header-search-input" type="text">
         <div class="header-search-icon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
+        <!-- 3 mục lựa chọn -->
       </div>
       <div class="header-list">
         <ul>
@@ -51,8 +58,7 @@
           </li>
         </ul>
       </div>
-
-
+      <!-- Khi màn hình thu nhỏ 3 mục sẽ bị ẩn đi, thay bằng 1 biểu tượng danh sách, ấn vào sẽ ra menu này -->
 
       <div class="header-menu">
         <i class="fa-solid fa-bars-staggered"></i>
@@ -77,15 +83,20 @@
         </div>
       </div>
 
+
+
+
+      <!-- Thông báo -->
       <div class="header-noti">
 
         <i class="fa-regular fa-bell"></i>
-
+        <!-- Ấn vào thông báo ra list này -->
         <div class="header-noti-list">
           <div class="header-noti-wrap">
             <div class="noti-title">
               Thông báo
             </div>
+
             <div class="btn-group">
               <div class="btn-c btn-c__blue">
                 Tất cả
@@ -96,8 +107,10 @@
             </div>
 
             <div class="noti-list">
+              <!-- Mỗi noti-item là một thông báo -->
               <ul>
                 <li>
+
                   <div class="noti-item">
                     <div class="noti-img">
                       <img src="assets/img/z4835425106247_efa60399a5b483f0ecbf319831396fae-removebg-preview.png" alt="">
@@ -154,9 +167,13 @@
 
       </div>
 
+      <!-- Tài khoản -->
       <div class="header-acc">
         <img src="assets/img/account (1).png" alt="">
+
+        <!-- Ấn vào Avt sẽ ra cái này -->
         <div class="acc-box">
+          <!-- Ảnh đại diện và thông tin -->
           <div class="acc-wrap">
             <div class="acc-img">
               <img src="assets/img/account (1).png" alt="">
@@ -168,18 +185,19 @@
               </div>
             </div>
           </div>
-
-        <div class="acc-mine">
-          <a href="#">Tài khoản của bạn</a>
-        </div>
-        <div class="acc-out">
-          <a href="#">Đăng xuất</a>
-        </div>
+          <!-- Lựa chọn -->
+          <div class="acc-mine">
+            <a href="#">Tài khoản của bạn</a>
+          </div>
+          <div class="acc-out">
+            <a href="#">Đăng xuất</a>
+          </div>
         </div>
       </div>
 
     </div>
 
+    <!-- Khi ấn vào Khoa sẽ ra phần này -->
     <div class="header-khoa">
       <div class="header-khoa-wrap">
         <div class="header-khoa-title">
@@ -202,19 +220,18 @@
       </div>
     </div>
 
-
-
   </header>
   <!-- End Header User-->
+
+  <!--  Phần Content này sẽ bao gồm cả đăng nhập và đăng ký -->
 
   <!-- Content -->
   <div class="content">
     <div class="container">
+      <!-- Hàng này là hàng nội dung chính ( gồm 2 nút đăng nhập và đăng ký) -->
       <div class="row">
         <div class="col-12">
           <div class="content-wrap">
-          
-          
             <div class="content-tittle__sm">
               CHÀO MỪNG ĐẾN VỚI
             </div>
@@ -223,22 +240,158 @@
               THƯ VIỆN PTIT
             </div>
 
-            <!-- Tạm sửa thành thẻ a để chuyển trang -->
+            <!--Đăng nhập -->
             <div class="content-btn">
-              <a href="https://tkw-dang-nhap.vercel.app/" class="btn btn__red">
+              <div class="btn btn__red btnLogIn">
                 ĐĂNG NHẬP
-              </d>
-              <a href = "https://tkw-dang-ky.vercel.app/" class="btn btn__white">
-                ĐĂNG KÝ
-              </a>
-            </div>
+              </div>
 
+
+              <div class="btn btn__white btnSignIn">
+                ĐĂNG KÝ
+              </div>
+            </div>
 
           </div>
         </div>
       </div>
+
+      <!-- Hàng này sẽ hiện ra khi ấn vào đăng nhập  -->
+
+
+      <!-- Đăng nhập -->
+      <div class="log-in">
+        <form action="" class="form" id="form-1">
+
+          <div class="exit">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h3 class="heading">
+                ĐĂNG NHẬP
+              </h3>
+            </div>
+
+            <!-- //email dang nhap -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="accountName" class="form-label">Tài khoản</label>
+                <input type="text" placeholder="VD : nguyenvanduong03@gmail.com" class="form-control">
+              </div>
+            </div>
+
+            <!-- //matkhau -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" placeholder="Nhap mat khau" class="form-control">
+              </div>
+            </div>
+
+            <!-- //btn dang nhập -->
+
+            <div class="col-12">
+              <div class="form-submit">
+                <a href="https://tkw-tim-kiem-main-peach.vercel.app/" class="btn btn__red">Đăng nhập</a>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-forget">
+                <a href="#"><i>Quên mật khẩu ?</i></a>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div> 
+
+
+
+      <!-- Hàng này là đăng kí -->
+
+      <div class="sign-in">
+        <form action="" class="form" id="form-2">
+          
+          <div class="exit">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h3 class="heading">
+                DANG KY
+              </h3>
+            </div>
+
+            <!-- ho -->
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="firstName" class="form-label">Ho</label>
+                <input type="text" placeholder="Ho" class="form-control">
+              </div>
+            </div>
+
+            <!-- //ten -->
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="name" class="form-label">Ten</label>
+                <input type="text" placeholder="Ten" class="form-control">
+              </div>
+            </div>
+
+            <!-- //email dang nhap -->
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label for="accountName" class="form-label">Email dang nhap</label>
+                <input type="text" placeholder="VD : nguyenvanduong03" class="form-control">
+              </div>
+            </div>
+
+            <!-- //email xac nhan -->
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label for="email_confirm" class="form-label">Email xac nhan</label>
+                <input type="email" placeholder="VD : DuongNV.B21PT001@stu.ptit.edu.vn" class="form-control">
+              </div>
+            </div>
+
+            <!-- //matkhau -->
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="password" class="form-label">Mat khau</label>
+                <input type="password" placeholder="Nhap mat khau" class="form-control">
+              </div>
+            </div>
+
+            <!-- //xac nhan mat khau -->
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="password_confirmation" class="form-label">Nhap lai mat khau</label>
+                <input type="password" placeholder="Nhap lai mat khau" class="form-control">
+              </div>
+            </div>
+
+            <!-- //btn dang ki -->
+
+            <div class="col-lg-12">
+              <div class="form-submit">
+                <button class="btn btn__red">Đăng ký</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
     </div>
+
   </div>
+  </div>
+
+
+
   <!-- End Content -->
   <!-- Footer -->
   <footer class="footer">
@@ -308,29 +461,48 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 
-    <script src="assets/JS/show.js"></script>
+  <script src="assets/JS/show.js"></script>
   <script>
+    //Khoa
     var khoa = document.querySelector(".khoa");
     var khoaMenu = document.querySelector(".khoa-menu");
     var khoaList = document.querySelector(".header-khoa");
     show(khoa, khoaList, 0);
     show(khoaMenu, khoaList, 0);
-  
 
+    //Thong bao
     var noti = document.querySelector(".header-noti");
     var notiList = document.querySelector(".header-noti-list");
-
     show(noti, notiList, 0);
 
+    //tai khoan
     var acc = document.querySelector(".header-acc");
     var accList = document.querySelector(".acc-box");
-
     show(acc, accList, 0);
 
+    //mini menu
     var menu = document.querySelector(".header-menu");
     var menuList = document.querySelector(".header-menu-list");
-
     show(menu, menuList, 0);
+
+    //dang nhap
+    var logIn = document.querySelector(".btnLogIn");
+    var logInList = document.querySelector(".log-in");
+    show(logIn, logInList, 0);
+
+    //dang ky
+    var signIn = document.querySelector(".btnSignIn");
+    var signInList = document.querySelector(".sign-in");
+    show(signIn, signInList, 0);
+
+
+    var x = document.querySelectorAll(".exit");
+    exit(x, logInList);
+    exit(x, signInList);
+
+  
+
+
   </script>
 </body>
 

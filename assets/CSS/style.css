@@ -5,6 +5,10 @@
   padding-top: 200px;
   padding-bottom: 280px;
   background-color: var(--color-pink);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 1000px;
 }
 .content-wrap {
   display: flex;
@@ -311,12 +315,48 @@
   margin-bottom: 10px;
 }
 
-.show {
-  display: flex;
-}
+
 /* .header-noti-list{
   
 } */
+
+
+/* login */
+.log-in{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 200px;
+  left: 0;
+  display: none;
+
+  }
+  
+  /* Quen mat khau */
+  .log-in .form .form-forget{
+    text-align: center;
+  }
+  
+  .log-in .form .form-forget a{
+    color: var(--color-blue);
+    font-size: 1.6rem;
+    
+  }
+  /* End login */
+
+  /* Sign in */
+  .sign-in{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 200px;
+    left: 0;
+    display: none;
+    }
+
+  /* End SignIn */
 
 /* Footer */
 .footer {
@@ -347,6 +387,9 @@
   aspect-ratio: 16/9;
 }
 /* End Footer */
+
+
+
 @media screen and (max-width: 1200px) {
   .header-main {
     width: 960px;
@@ -493,4 +536,15 @@
   .content-btn{
     flex-direction: column;
   }
+}
+
+
+/* JS */
+
+.show {
+  display: flex;
+}
+
+.notShow{
+  display: none;
 }
