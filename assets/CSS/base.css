@@ -134,14 +134,13 @@ ul{
 
 .form{
   position: relative;
-  width:640px;
+  width: 640px;
+  min-width: 320px;
   min-height: 600px;
-  padding: 60px 60px;
+  padding: 80px 60px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
-  
-  
 }
 .form .heading {
   font-size: 3rem;

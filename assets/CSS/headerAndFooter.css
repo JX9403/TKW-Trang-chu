@@ -1,40 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-/* Content */
-.content {
-  padding-top: 200px;
-  padding-bottom: 280px;
-  background-color: var(--color-pink);
-  display: flex;
-  justify-content: center;
-  position: relative;
-  min-height: 1000px;
-}
-.content-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-tittle__sm {
-  font-size: 5.6rem;
-  font-weight: 600;
-  color: var(--color-black);
-}
-.content-title__lg {
-  font-size: 8.4rem;
-  font-weight: 900;
-  color: var(--color-red);
-  margin-bottom: 20px;
-}
-.content-btn {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* End Content */
-
 /* Header */
 .header {
   display: flex;
@@ -320,52 +283,33 @@
   
 } */
 
+/* Footer */
+.footer {
+  background-color: #f0f0f4f4;
+  padding: 140px 10px;
+}
 
-/* login */
-.log-in{
-  position: absolute;
-  display: flex;
-  justify-content: center;
+.footer-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-red);
+  margin-bottom: 20px;
+}
+.footer-content-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.footer-content-desc {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.footer-content-map iframe {
   width: 100%;
-  top: 200px;
-  left: 0;
-  display: none;
-
-  }
-  
-  /* Quen mat khau */
-  .log-in .form .form-forget{
-    text-align: center;
-  }
-  
-  .log-in .form .form-forget a{
-    color: var(--color-blue);
-    font-size: 1.6rem;
-    
-  }
-  /* End login */
-
-  /* Sign in */
-  .sign-in{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    top: 200px;
-    left: 0;
-    display: none;
-    }
-
-  /* End SignIn */
- 
-
-
-/* JS */
-
-.show {
-  display: flex;
+  height: auto;
+  aspect-ratio: 16/9;
 }
+/* End Footer */
 
-.notShow{
-  display: none;
-}
