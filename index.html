@@ -77,126 +77,13 @@
               </a>
             </li>
             <li>
-              <a href="https://tkw-da-luu.vercel.app/">
+              <a href="#">
                 Đã Lưu
               </a>
             </li>
           </ul>
         </div>
       </div>
-
-
-
-
-      <!-- Thông báo -->
-      <div class="header-noti">
-
-        <i class="fa-regular fa-bell"></i>
-        <!-- Ấn vào thông báo ra list này -->
-        <div class="header-noti-list">
-          <div class="header-noti-wrap">
-            <div class="noti-title">
-              Thông báo
-            </div>
-
-            <div class="btn-group">
-              <div class="btn-c btn-c__blue">
-                Tất cả
-              </div>
-              <div class="btn-c btn-c__white">
-                Chưa đọc
-              </div>
-            </div>
-
-            <div class="noti-list">
-              <!-- Mỗi noti-item là một thông báo -->
-              <ul>
-                <li>
-
-                  <div class="noti-item">
-                    <div class="noti-img">
-                      <img src="assets/img/z4835425106247_efa60399a5b483f0ecbf319831396fae-removebg-preview.png" alt="">
-                    </div>
-                    <div class="noti-content">
-                      <div class="noti-desc">
-                        <b>Khoa đa phương tiện</b>
-                        vừa cập nhật tài liệu mới.
-                      </div>
-                      <div class="noti-state">
-                        Vừa xong
-                      </div>
-                    </div>
-
-                  </div>
-                </li>
-                <li>
-                  <div class="noti-item">
-                    <div class="noti-img">
-                      <img src="assets/img/z4835425106247_efa60399a5b483f0ecbf319831396fae-removebg-preview.png" alt="">
-                    </div>
-                    <div class="noti-content">
-                      <div class="noti-desc">
-                        <b>Khoa đa phương tiện</b>
-                        vừa cập nhật tài liệu mới.
-                      </div>
-                      <div class="noti-state">
-                        Vừa xong
-                      </div>
-                    </div>
-                </li>
-                <li>
-                  <div class="noti-item">
-                    <div class="noti-img">
-                      <img src="assets/img/z4835425106247_efa60399a5b483f0ecbf319831396fae-removebg-preview.png" alt="">
-                    </div>
-                    <div class="noti-content">
-                      <div class="noti-desc">
-                        <b>Khoa đa phương tiện</b>
-                        vừa cập nhật tài liệu mới.
-                      </div>
-                      <div class="noti-state">
-                        Vừa xong
-                      </div>
-                    </div>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-
-      <!-- Tài khoản -->
-      <div class="header-acc">
-        <img src="assets/img/account (1).png" alt="">
-
-        <!-- Ấn vào Avt sẽ ra cái này -->
-        <div class="acc-box">
-          <!-- Ảnh đại diện và thông tin -->
-          <div class="acc-wrap">
-            <div class="acc-img">
-              <img src="assets/img/account (1).png" alt="">
-            </div>
-            <div class="acc-inf">
-              <div class="acc-name">Nguyễn Hoàng Dương</div>
-              <div class="acc-mail">
-                Hoangduong@gmail.com
-              </div>
-            </div>
-          </div>
-          <!-- Lựa chọn -->
-          <div class="acc-mine">
-            <a href="#">Tài khoản của bạn</a>
-          </div>
-          <div class="acc-out">
-            <a href="#">Đăng xuất</a>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <!-- Khi ấn vào Khoa sẽ ra phần này -->
@@ -279,8 +166,8 @@
             <!-- //email dang nhap -->
             <div class="col-12">
               <div class="form-group">
-                <label for="accountName" class="form-label">Tài khoản</label>
-                <input type="text" placeholder="VD : nguyenvanduong03@gmail.com" class="form-control">
+                <label for="accountName" class="form-label" >Tài khoản</label>
+                <input type="text" placeholder="VD : nguyenvanduong03@gmail.com" class="form-control" id = "email">
               </div>
             </div>
 
@@ -288,7 +175,7 @@
             <div class="col-12">
               <div class="form-group">
                 <label for="password" class="form-label">Mật khẩu</label>
-                <input type="password" placeholder="Nhap mat khau" class="form-control">
+                <input type="password" placeholder="Nhap mat khau" class="form-control" id = "pass">
               </div>
             </div>
 
@@ -296,7 +183,7 @@
 
             <div class="col-12">
               <div class="form-submit">
-                <a href="https://tkw-tim-kiem-main-rho.vercel.app/" class="btn btn__red">Đăng nhập</a>
+                <div class="btn btn__red  " onclick="kiemTraDangNhap()">Đăng nhập</div>
               </div>
             </div>
 
@@ -472,16 +359,6 @@
     show(khoa, khoaList, 0);
     show(khoaMenu, khoaList, 0);
 
-    //Thong bao
-    var noti = document.querySelector(".header-noti");
-    var notiList = document.querySelector(".header-noti-list");
-    show(noti, notiList, 0);
-
-    //tai khoan
-    var acc = document.querySelector(".header-acc");
-    var accList = document.querySelector(".acc-box");
-    show(acc, accList, 0);
-
     //mini menu
     var menu = document.querySelector(".header-menu");
     var menuList = document.querySelector(".header-menu-list");
@@ -496,14 +373,6 @@
     var signIn = document.querySelector(".btnSignIn");
     var signInList = document.querySelector(".sign-in");
     show(signIn, signInList, 0);
-
-
-    var x = document.querySelectorAll(".exit");
-    exit(x, logInList);
-    exit(x, signInList);
-
-  
-
 
   </script>
 </body>
