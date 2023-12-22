@@ -145,18 +145,16 @@
         </div>
       </div>
 
-      <!-- Hàng này sẽ hiện ra khi ấn vào đăng nhập  -->
-
-
       <!-- Đăng nhập -->
       <div class="log-in">
         <form action="" class="form" id="form-1">
-
+          <!-- Nút close -->
           <div class="exit">
             <i class="fa-regular fa-circle-xmark"></i>
           </div>
 
           <div class="row">
+            <!-- Tiêu đề -->
             <div class="col-12">
               <h3 class="heading">
                 ĐĂNG NHẬP
@@ -166,8 +164,8 @@
             <!-- //email dang nhap -->
             <div class="col-12">
               <div class="form-group">
-                <label for="accountName" class="form-label" >Tài khoản</label>
-                <input type="text" placeholder="VD : nguyenvanduong03@gmail.com" class="form-control" id = "email">
+                <label for="accountName" class="form-label">Tài khoản</label>
+                <input type="text" placeholder="VD : nguyenvanduong03@gmail.com" class="form-control" id="email">
               </div>
             </div>
 
@@ -175,7 +173,7 @@
             <div class="col-12">
               <div class="form-group">
                 <label for="password" class="form-label">Mật khẩu</label>
-                <input type="password" placeholder="Nhap mat khau" class="form-control" id = "pass">
+                <input type="password" placeholder="Nhap mat khau" class="form-control" id="pass">
               </div>
             </div>
 
@@ -194,14 +192,14 @@
             </div>
           </div>
         </form>
+      </div>
+      <!-- End đăng nhập -->
 
-      </div> 
-
-<!-- Hàng này là đăng kí -->
+      <!-- Đăng ký-->
 
       <div class="sign-in">
         <form action="" class="form" id="form-2">
-          
+
           <div class="exit">
             <i class="fa-regular fa-circle-xmark"></i>
           </div>
@@ -284,8 +282,9 @@
             <!-- //nhập email lấy lại mk -->
             <div class="col-12">
               <div class="form-group">
-                <label for="accountName" class="form-label" >Vui lòng nhập email Outlook của bạn để lấy lại mật khẩu</label>
-                <input type="text" placeholder="VD : nguyenvanduong03@ptit.edu.vn" class="form-control" id = "email">
+                <label for="accountName" class="form-label">Vui lòng nhập email Outlook của bạn để lấy lại mật
+                  khẩu</label>
+                <input type="text" placeholder="VD : nguyenvanduong03@ptit.edu.vn" class="form-control" id="email">
               </div>
             </div>
 
@@ -293,12 +292,12 @@
 
             <div class="col-12">
               <div class="form-submit">
-                <a href = "#popup1" class="btn btn__blue btnExit">Gửi</a>
+                <a href="#popup1" class="btn btn__blue btnExit">Gửi</a>
               </div>
             </div>
         </form>
 
-      </div> 
+      </div>
       <!-- End quên mật khẩu -->
     </div>
 
@@ -375,6 +374,8 @@
     </div>
   </footer>
   <!-- End Footer -->
+
+  
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -401,7 +402,7 @@
     var logIn = document.querySelector(".btnLogIn");
     var logInList = document.querySelector(".log-in");
     show1(logIn, logInList);
-//quen mật khẩu
+    //quên mật khẩu
     var logInForget = document.querySelector(".form-forget a");
     var quenMk = document.querySelector(".log-in-forget");
     show1(logInForget, quenMk);
@@ -410,12 +411,9 @@
     var signInList = document.querySelector(".sign-in");
     show1(signIn, signInList);
 
-   
-    
-   
     exit(cancel, logInList);
     exit(cancel, signInList);
-
+    exit(cancel, quenMk);
     var btnExit = document.querySelectorAll(".btnExit");
     console.log(btnExit)
     exit(btnExit, quenMk);
