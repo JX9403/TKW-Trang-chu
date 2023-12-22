@@ -9,12 +9,19 @@ function show (item, list, cnt) {
   });
 };
 
+function show1 (item, list) {
+  item.addEventListener("click", function () {
+    list.classList.add("show");
+  });
+};
+
 function exit (item, list) {
-  item.forEach((element) => {
+  item.forEach(element => {
     element.addEventListener("click", function () {
       list.classList.remove("show");
     });
   });
+  
 };
 
 function kiemTraDangNhap() {

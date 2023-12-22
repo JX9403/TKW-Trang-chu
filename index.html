@@ -189,7 +189,7 @@
 
             <div class="col-12">
               <div class="form-forget">
-                <a href="#"><i>Quên mật khẩu ?</i></a>
+                <a href="#">Quên mật khẩu ?</a>
               </div>
             </div>
           </div>
@@ -197,9 +197,7 @@
 
       </div> 
 
-
-
-      <!-- Hàng này là đăng kí -->
+<!-- Hàng này là đăng kí -->
 
       <div class="sign-in">
         <form action="" class="form" id="form-2">
@@ -274,14 +272,48 @@
         </form>
       </div>
 
+      <!-- Quên mật khẩu -->
+      <div class="log-in-forget">
+        <form action="" class="form" id="form-1">
+
+          <div class="exit">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <div class="row">
+            <!-- //nhập email lấy lại mk -->
+            <div class="col-12">
+              <div class="form-group">
+                <label for="accountName" class="form-label" >Vui lòng nhập email Outlook của bạn để lấy lại mật khẩu</label>
+                <input type="text" placeholder="VD : nguyenvanduong03@ptit.edu.vn" class="form-control" id = "email">
+              </div>
+            </div>
+
+            <!-- //btn gửi email -->
+
+            <div class="col-12">
+              <div class="form-submit">
+                <a href = "#popup1" class="btn btn__blue btnExit">Gửi</a>
+              </div>
+            </div>
+        </form>
+
+      </div> 
+      <!-- End quên mật khẩu -->
     </div>
 
   </div>
   </div>
 
-
-
   <!-- End Content -->
+  <!-- popup -->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <h2>Chúng tôi đã gửi mật khẩu vào tài khoản Email của bạn. Vui lòng đăng nhập Email để nhận mật khẩu</h2>
+    </div>
+  </div>
+  <!-- End popup -->
   <!-- Footer -->
   <footer class="footer">
     <!-- container chiếm khoảng nhất định ở giữa, đâu đó hình như là 1200px, ko full màn hình -->
@@ -356,6 +388,7 @@
     var khoa = document.querySelector(".khoa");
     var khoaMenu = document.querySelector(".khoa-menu");
     var khoaList = document.querySelector(".header-khoa");
+    var cancel = document.querySelectorAll(".exit");
     show(khoa, khoaList, 0);
     show(khoaMenu, khoaList, 0);
 
@@ -367,12 +400,25 @@
     //dang nhap
     var logIn = document.querySelector(".btnLogIn");
     var logInList = document.querySelector(".log-in");
-    show(logIn, logInList, 0);
-
+    show1(logIn, logInList);
+//quen mật khẩu
+    var logInForget = document.querySelector(".form-forget a");
+    var quenMk = document.querySelector(".log-in-forget");
+    show1(logInForget, quenMk);
     //dang ky
     var signIn = document.querySelector(".btnSignIn");
     var signInList = document.querySelector(".sign-in");
-    show(signIn, signInList, 0);
+    show1(signIn, signInList);
+
+   
+    
+   
+    exit(cancel, logInList);
+    exit(cancel, signInList);
+
+    var btnExit = document.querySelectorAll(".btnExit");
+    console.log(btnExit)
+    exit(btnExit, quenMk);
 
   </script>
 </body>
