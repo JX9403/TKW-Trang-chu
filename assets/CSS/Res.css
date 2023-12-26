@@ -39,15 +39,7 @@
     font-size: 1.8rem;
   }
 
-  .header-khoa-wrap {
-    width: 720px;
-  }
-  .header-khoa-title {
-    margin-left: 10px;
-  }
-  .header-khoa-list {
-    flex-direction: column;
-  }
+
 
   .header-noti-list {
     width: 400px;
@@ -124,7 +116,7 @@
 
   .header-menu-list {
     width: 320px;
-    right: -180px;
+    right: -35px;
   }
 
   .btn-c {
@@ -168,10 +160,9 @@
 }
 
 .popup h2 {
-  color: #333;
+  
   font-size: 1.8rem;
-  margin: 20px 0;
-  font-size: 2rem;
+
 }
 
 
