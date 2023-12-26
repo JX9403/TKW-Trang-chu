@@ -57,7 +57,7 @@
   .log-in .form .form-forget a{
     color: var(--color-blue);
     font-size: 1.6rem;
-    
+    font-style: italic;
   }
   /* End login */
 
