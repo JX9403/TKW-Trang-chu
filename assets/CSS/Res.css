@@ -154,5 +154,25 @@
   .content-btn{
     flex-direction: column;
   }
+
+  .log-in-forget{
+    top: 100px;
+  }
   
+  /* popup */
+
+.popup {
+ 
+  width:80%;
+
+}
+
+.popup h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+
 }

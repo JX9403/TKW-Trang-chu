@@ -231,7 +231,7 @@
             <div class="col-12">
               <div class="form-group">
                 <label for="accountName" class="form-label">Email đăng nhập</label>
-                <input type="text" placeholder="VD : nguyenvanduong03" class="form-control">
+                <input type="text" placeholder="VD : nguyenvanduong03@gmail.com" class="form-control">
               </div>
             </div>
 
@@ -263,7 +263,8 @@
 
             <div class="col-12">
               <div class="form-submit">
-                <button class="btn btn__red">Đăng ký</button>
+                <button class="btn btn__red ">
+                  <a href="#popup2" style="color: white;">Đăng ký</a></button>
               </div>
             </div>
           </div>
@@ -310,6 +311,13 @@
     <div class="popup">
       <a class="close" href="#">&times;</a>
       <h2>Chúng tôi đã gửi mật khẩu vào tài khoản Email của bạn. Vui lòng đăng nhập Email để nhận mật khẩu</h2>
+    </div>
+  </div>
+
+  <div id="popup2" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <h2>Vui lòng xác nhận tài khoản qua Email đã đăng ký xác nhận .</h2>
     </div>
   </div>
   <!-- End popup -->
@@ -390,6 +398,7 @@
     var khoaMenu = document.querySelector(".khoa-menu");
     var khoaList = document.querySelector(".header-khoa");
     var cancel = document.querySelectorAll(".exit");
+
     show(khoa, khoaList, 0);
     show(khoaMenu, khoaList, 0);
 
@@ -413,11 +422,12 @@
 
     exit(cancel, logInList);
     exit(cancel, signInList);
+
     exit(cancel, quenMk);
     var btnExit = document.querySelectorAll(".btnExit");
-    console.log(btnExit)
     exit(btnExit, quenMk);
 
+   
   </script>
 </body>
 
