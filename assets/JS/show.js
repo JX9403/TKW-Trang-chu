@@ -35,7 +35,7 @@ function  dangNhap ( tenTaiKhoan, matKhau) {
     if (tenTaiKhoan === "user@gmail.com" && matKhau === "123456") {
       
       window.location.href = "https://tkw-tim-kiem-main-rho.vercel.app/";
-    } else if (tenTaiKhoan === "admin@gmail.com" && matKhau === "123456") {
+    } else if (tenTaiKhoan === "admin@ptit.edu.vn" && matKhau === "123456") {
        window.location.href = "https://tkw-ad-trang-chu.vercel.app/";
     } else {
       alert("Sai tên đăng nhập hoặc mật khẩu");
